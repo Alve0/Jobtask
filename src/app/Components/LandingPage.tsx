@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function LandingPage() {
-  let width = 40;
+  const wid = 40;
 
   // simpler slide animations with no easing or spring stuff
   const slideFromLeft = {
@@ -82,8 +82,8 @@ export default function LandingPage() {
           transition={{ duration: 0.8 }}
         >
           <span className="font-semibold"> Ideas → Apps → Brands. </span>
-          We're a digital agency helping startups <br /> bring their ideas to
-          life with custom mobile apps, websites, and <br /> brand identity.
+          We&apos;re a digital agency helping startups <br /> bring their ideas
+          to life with custom mobile apps, websites, and <br /> brand identity.
         </motion.p>
 
         <motion.button
@@ -113,7 +113,7 @@ export default function LandingPage() {
 
         <div
           className="absolute top-0 left-80 h-full flex"
-          style={{ width: `${width}%` }}
+          style={{ width: `${wid}%` }}
         >
           {[...Array(6)].map((_, i) => (
             <motion.div
